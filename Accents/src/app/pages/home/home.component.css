@@ -16,3 +16,14 @@ padding-bottom: 30px;
   border-radius: 5px;
 margin-top: 10px;
 }
+.tvstand :hover img {
+  filter: brightness(80%);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+app-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
