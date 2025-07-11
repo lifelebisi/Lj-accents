@@ -1,0 +1,41 @@
+
+<app-navbar></app-navbar>
+<section class="bg-black dark:bg-white text-black" id="contact">
+  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-yellow-600">Request a Carpentry Quote</h2>
+    <p class="mb-8 lg:mb-16 font-light text-center text-gray-700 sm:text-xl">
+      Need a custom woodwork or carpentry service? Fill in your details and upload an image of your idea or space.
+      We’ll get back to you shortly via email or WhatsApp at <strong class="text-black">+27 71 507 1778</strong>.
+    </p>
+    <form action="https://formspree.io/f/mnnvyypn" method="POST" class="space-y-8">
+      <div>
+        <label for="email" class="block mb-2 text-sm font-medium">Your Email</label>
+        <input type="email" name="email" id="email" required placeholder="name@example.com"
+          class="bg-white border border-black text-black text-sm rounded-lg block w-full p-2.5 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black" />
+      </div>
+      <div>
+        <label for="subject" class="block mb-2 text-sm font-medium">Type of Work</label>
+        <input type="text" name="subject" id="subject" required placeholder="e.g., Kitchen cabinets, Wardrobes"
+          class="bg-white border border-black text-black text-sm rounded-lg block w-full p-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black" />
+      </div>
+      <div>
+        <label for="message" class="block mb-2 text-sm font-medium">Describe Your Request</label>
+        <textarea name="message" id="message" rows="6" required
+          class="bg-white border border-black text-black text-sm rounded-lg block w-full p-2.5 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black"
+          placeholder="Provide dimensions, wood type preference, or any specific details..."></textarea>
+      </div>
+      <div>
+        <label for="file" class="block mb-2 text-sm font-medium">Upload an Image (optional)</label>
+        <input type="file" name="image" id="file" accept="image/*"
+          class="block w-full text-sm text-black bg-white border border-black rounded-lg file:bg-yellow-600 file:text-white file:font-semibold file:py-2 file:px-4 file:rounded-lg" />
+      </div>
+      <input type="hidden" name="_subject" value="New Carpentry Quote Request">
+      <input type="hidden" name="_cc" value="lifelebisi@gmail.com">
+      <button type="submit"
+        class="py-3 px-5 text-sm font-medium text-center text-white bg-yellow-600 rounded-lg sm:w-fit hover:bg-yellow-700 focus:ring-2 focus:outline-none focus:ring-black">
+        Send Quote Request
+      </button>
+    </form>
+  </div>
+</section>
+<app-footer></app-footer>

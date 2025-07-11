@@ -1,3 +1,5 @@
+import { Routes } from '@angular/router';
+import { routes } from './../app.routes';
 import { Component } from '@angular/core';
 
 @Component({
